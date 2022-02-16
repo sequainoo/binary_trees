@@ -3,6 +3,7 @@
 /**
  * binary_tree_size - gets size of tree recursively
  * @tree: the object in question
+ * Return: size of tree
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
