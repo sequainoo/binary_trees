@@ -21,6 +21,19 @@ size_t height(const binary_tree_t *tree)
 }
 
 /**
+ * t_height - gets height of binary tree
+ * @tree: the tree in question
+ * Return: height as int starting from zero
+ */
+size_t t_height(const binary_tree_t *tree)
+{
+
+	if (tree == NULL)
+		return (0);
+	return (height(tree) - 1);
+}
+
+/**
  * binary_tree_balance - return the balance factor of the tree
  * @tree: the tree in question
  * Return: an interger representing the balcne factor
@@ -30,5 +43,5 @@ int binary_tree_balance(const binary_tree_t *tree)
 	/* balance factor is height_right_subtree - height of leftsubtree */
 	if (tree == NULL)
 		return (0);
-	return (height(tree->right) - height(tree->left));
+	return (t_height(tree->right) - t_height(tree->left));
 }
