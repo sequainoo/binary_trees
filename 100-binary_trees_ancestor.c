@@ -2,7 +2,7 @@
 
 /**
  * moveup - moves node up some levels
- * @node - node in question
+ * @node: node in question
  * @levels_up: the number of levels up to move
  * Return: pointer to the level moved to or NULL
  */
@@ -47,7 +47,8 @@ size_t depth(const binary_tree_t *tree)
  * @second: one of the nodes
  * Return: a pointer to their lowest common ancestor
  */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+const binary_tree_t *second)
 {
 	int depth_first, depth_second, diff;
 	binary_tree_t *first_parent, *second_parent;
