@@ -1,6 +1,5 @@
 #include "binary_trees.h"
 
-size_t height(const binary_tree_t *tree);
 int balance(const binary_tree_t *tree);
 avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
 		avl_t **new, int value);
