@@ -1,5 +1,6 @@
 #include "binary_trees.h"
 #include "11-binary_tree_size.c"
+
 /**
  * complete - checks if tree is complete or not
  * @tree: a pointer to the root of the tree
@@ -16,6 +17,7 @@ int complete(const binary_tree_t *tree, int index, int count)
     return (complete(tree->left, 2 * index + 1, count) &&
     complete(tree->right, 2 * index + 2, count));
 }
+
 /**
  * binary_tree_is_complete - checks if tree is complete or not
  * @tree: a pointer to the root of the tree
